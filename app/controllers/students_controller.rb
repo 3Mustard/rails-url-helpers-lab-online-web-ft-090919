@@ -7,6 +7,8 @@ class StudentsController < ApplicationController
 
   def show
   end
+  
+  
 
   private
 
