@@ -11,7 +11,11 @@ class StudentsController < ApplicationController
   
   def activate 
     @student = Student.find(params[:id])
-    @student.active = !@student.active
+    if @student.active 
+      @student.active = false 
+    else 
+      @student.active = true 
+    end 
     @student.save
   end 
 
