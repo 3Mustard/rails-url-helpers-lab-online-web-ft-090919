@@ -13,7 +13,6 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
     @student.activate = !@student.activate
     @student.save
-    redirect student_path(@student)
   end 
 
   private
